@@ -1,0 +1,44 @@
+# Chest X-Ray Classification System - Usage Instructions
+
+## Setup
+1. Make the scripts executable:
+```bash
+chmod +x train.sh run.sh
+```
+
+## Training Mode
+To start training:
+```bash
+./train.sh
+```
+This script will:
+- Create a virtual environment (if it doesn't exist)
+- Install required packages
+- Start model training
+- Save the best model and training logs
+
+## Web Interface Mode
+To start the web interface:
+```bash
+./run.sh
+```
+This script will:
+- Create a virtual environment (if it doesn't exist)
+- Install required packages
+- Start the FastAPI server
+- Provide access to the web interface
+
+## Common Features
+- Both scripts automatically:
+  - Create and activate the virtual environment
+  - Install required packages
+  - Remind you how to deactivate the environment when done
+
+## Notes
+- To deactivate the virtual environment when done:
+  ```bash
+  deactivate
+  ```
+- Scripts work on macOS and Linux
+- No system configuration changes needed
+- Project is portable to other computers 
