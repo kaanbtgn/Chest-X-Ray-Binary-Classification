@@ -2,6 +2,7 @@
 
 A deep learning system for classifying chest X-ray images using TensorFlow. The system provides both training capabilities and a FastAPI-based web interface for inference.
 
+The model is trained on the Chest X-Ray Pneumonia Dataset from Kaggle (https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia), which contains chest X-ray images for pneumonia classification.
 ## Features
 
 ### 1. Model Training
@@ -81,6 +82,7 @@ xray_detection/
 
 The system uses a DenseNet-121 based deep learning model with the following features:
 - Pre-trained on ImageNet
+- Trained on the Chest X-Ray Pneumonia Dataset from Kaggle
 - Fine-tuned for chest X-ray classification
 - Binary classification (Normal vs Pneumonia)
 - Regularization: augmentation + dropout + early-stopping
